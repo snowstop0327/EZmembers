@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+  <meta charset="UTF-8">
+  <title>會員專區-我的購物金</title>
+  <link rel="shortcut icon" href="http://reg.ezprice.com.tw/images/icon_logo.ico">
+  <link rel="icon" href="http://reg.ezprice.com.tw/images/icon_logo.ico" type="image/ico">
+
+
+<link href="./會員專區 - EZprice 比價網_files/oldframe.css" rel="stylesheet" type="text/css">
+<link href="./會員專區 - EZprice 比價網_files/opmizited_min.css" rel="stylesheet" type="text/css">
+<link href="./會員專區 - EZprice 比價網_files/EZprice1013.css" rel="stylesheet" type="text/css">
+<link href="./會員專區 - EZprice 比價網_files/ezprice1215.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="./會員專區 - EZprice 比價網_files/confirm.css">
+<link href="./會員專區 - EZprice 比價網_files/for_search_page.css" rel="stylesheet" type="text/css">
+<link href="./會員專區 - EZprice 比價網_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<!-- Add jQuery library -->
+	<script src="./會員專區 - EZprice 比價網_files/jquery-1.8.3.min.js"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="./會員專區 - EZprice 比價網_files/jquery.fancybox-min.js" async="true"></script>
+	<link rel="stylesheet" type="text/css" href="./會員專區 - EZprice 比價網_files/jquery.fancybox.css" media="screen">
+<script type="text/javascript">
+document.domain = "ezprice.com.tw";
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function checksearch(theform) {
+   document.getElementById("srhbox1").style.display = "none";
+   document.getElementById("srhbox2").style.display = "block";
+   theform.submit();
+   return true;
+}
+document.onreadystatechange=function (){
+    if (document.readyState=="complete") {
+         x = document.getElementsByName("delayelm");
+         for (i=0;i<x.length;i++) if (""!=x[i].getAttribute("picurl")) x[i].src=x[i].getAttribute("picurl");
+    }
+}
+</script>
+
+<link href="./會員專區 - EZprice 比價網_files/srch_min.css" rel="stylesheet" type="text/css">
+<!-- 將此標記放在標頭中，或是結尾內文標記前方 -->
+
+<script type="text/javascript" src="./會員專區 - EZprice 比價網_files/jquery.suggest_search_new.js"></script>
+<script async="" src="./會員專區 - EZprice 比價網_files/sidebar_new.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        //$("#srhkw1").suggest("/suggest.php?act=srhkw","");
+        $("#srhkw1").suggest("http://api.ezprice.com.tw/suggest/suggest_v2016.php?act=srhkw","");
+    });
+</script>
+<script async="" src="./會員專區 - EZprice 比價網_files/header_template_events_new.js"></script>
+</head>
+
+<body>
+<div id="top_block" height="64px" style="display:none;"></div>
+<div class="screen-height">
+
+<div id="headbox" class="headboxtech">
+      <div class="fixwight">
+        <div class="head_logo">
+          <a class="logobtn_new" href="http://ezprice.com.tw/" title="EZprice 比價網 網路購物比價王"></a>
+          <div class="titleH1">
+            
+          </div>
+        </div>
+        <div class="head_menu">
+          <div class="head_menu_2">
+                            <div class="search_box">
+
+                    <form action="http://ezprice.com.tw/price_list.php" method="get" name="srhform" id="submit" style="float:left;" enctype="multipart/form-data">
+                    <input type="text" placeholder="想省？來比價！" class="search_text" name="kw" id="srhkw1" autocomplete="off">
+
+                    <div class="search_text_suggestion" style="display:none;">
+
+                    </div>
+
+                    <input type="button" class="search_btn" id="srh_btn">
+                    </form>
+                    <div class="clear"></div>
+                </div>
+            <div class="hot_list">
+              <div class="tag-area">
+                <div class="hot_tag">熱門</div>
+              </div>
+              <div class="kws-area">
+                <div class="tc">
+                  <div class="ovf">
+                    <a class="hot_keyword" href="http://ezprice.com.tw/s/sbh-20%20sony/price/">sbh 20 sony</a> <a class="hot_keyword" href="http://ezprice.com.tw/s/%E5%B1%B1%E6%8E%A1%E8%97%A5%E7%BE%8E%E7%99%BD%E4%BF%9D%E6%BF%95%E7%8E%AB%E7%91%B0%E8%AD%B7%E6%89%8B%E9%9C%9C/price/">山採藥美白保濕玫瑰護手霜</a> <a class="hot_keyword" href="http://ezprice.com.tw/s/Valentino%20%E5%B0%8D%E9%8C%B6%20Coupeau/price/">Valentino 對錶 Coupeau</a> <a class="hot_keyword" href="http://ezprice.com.tw/hotkeyword_sp.php">更多</a><a class="hot_keyword" href="http://ezprice.com.tw/hotkeyword_new.php">.</a> 
+                  </div>
+                </div>
+              </div>
+              <div class="arrow-area">
+                <div class="hot_arrow">
+                  <div class="arrow"></div>
+                </div>
+              </div>
+              <div class="hot_more_list" style="display:none;">
+                <div class="arrow-area">
+                                <a class="hot_arrow"><div class="hot_arrowdown"></div></a>
+                            </div>
+                            <!-- 更多熱門關鍵字清單開始 -->
+                            <!--<div class="hot_more_list" style="display:none;">
+                             </div>-->
+                                <a class="keyword" href="http://ezprice.com.tw/s/%E6%83%85%E8%B6%A3%20%E5%A4%A7%E5%B0%BA/price/">情趣 大尺</a>, <a class="keyword" href="http://ezprice.com.tw/s/80%20x%2060%20cm/price/">80 x 60 cm</a>, <a class="keyword" href="http://ezprice.com.tw/s/%E5%A4%A2%E5%B9%BB%20%E8%B7%B3%E7%B9%A9%20%E9%AB%98%E7%B4%9A/price/">夢幻 跳繩 高級</a>, <a class="keyword" href="http://ezprice.com.tw/s/gamax%202a%20%E5%98%89%E7%91%AA%E4%BB%95/price/">gamax 2a 嘉瑪仕</a>, <a class="keyword" href="http://ezprice.com.tw/s/the%20%E5%85%85%E6%B0%A3%20%E5%8A%A0%E6%8B%BF%E5%A4%A7/price/">the 充氣 加拿大</a>, <a class="keyword" href="http://ezprice.com.tw/s/arcteryx%20beta%20sl/price/">arcteryx beta sl</a>, <a class="keyword" href="http://ezprice.com.tw/s/eupa%20%E6%9E%9C%E6%B1%81%E6%A9%9F%20tsk-9392/price/">eupa 果汁機 tsk 9392</a>, <a class="keyword" href="http://ezprice.com.tw/s/650v2/price/">650v2</a>, <a class="keyword" href="http://ezprice.com.tw/s/pipedream%20%E7%A9%BF%E6%88%B4%E5%BC%8F/price/">pipedream 穿戴式</a>, <a class="keyword" href="http://ezprice.com.tw/hotkw.php">更多</a><a class="keyword" href="http://ezprice.com.tw/superkw.php">..</a><a class="keyword" href="http://ezprice.com.tw/hotkw2.php">..</a><a class="keyword" href="http://ezprice.com.tw/superkw_DayRank.php">.</a>
+                           
+                            <!-- 更多熱門關鍵字清單結束 -->
+              </div>
+            </div>
+            <div class="user_menu">                                
+                                <a href="javascript:void(0);" class="user_menu_btn">
+                                	<div class="user_info">
+            	                    	<span class="profilepic"><img src="./會員專區 - EZprice 比價網_files/picture" width="25" height="25"></span>
+                	                    <span class="username">Snow-stop  Huang</span>
+                	                    
+                                    </div>
+                                </a>
+                                <div class="user_menu_list" style="display:none;">
+            	                   	<ul>                                      	
+                                        <li>
+                                        	<a href="http://reg.ezprice.com.tw/shoplist.php" id="user_want">我的收藏</a>
+                                        </li>
+                                        <!--<li>
+                                        	<a href="#" id="user_rss">訂閱</a>
+                                        </li>
+                                        <li>
+                                        	<a href="#" id="user_comment">評論</a>
+                                        </li>-->
+                                        <li>
+                                        	<a href="http://reg.ezprice.com.tw/cplist.php" id="user_search">瀏覽記錄</a>
+                                        </li>
+                                        <li>
+                                        	<a href="http://reg.ezprice.com.tw/discount.php" id="user_promotion">我的購物金</a>
+                                        </li>
+                                        <li>
+                                        	<a href="http://reg.ezprice.com.tw/member.php" id="user_note">會員資料</a>
+                                        </li>
+                                        <li>
+                                        	<a href="http://reg.ezprice.com.tw/logout.php?nu=aHR0cDovL3JlZy5lenByaWNlLmNvbS50dy9kaXNjb3VudC5waHA=" id="user_log_out">登出</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><script>
+                            function openlogin(){
+                                    alert("您已經是登入狀態。");
+                            }
+                            </script>
+          </div>
+        </div>
+
+      </div>
+    </div>
+<div class="jScr">
+    <div class="fixwight" id="content_box" style="font-size: 12px;">
+          <div class="tr_eznv">
+           	<a href="http://ezprice.com.tw/" title="Ezprice比價網">Ezprice比價網</a> / 會員專區
+          </div>
+          <div class="clear"></div>    
+        <div>
+            	</div>
+<link href="./會員專區 - EZprice 比價網_files/member_new.css" rel="stylesheet" type="text/css">
+	<div class="maintrbox">
+    	<div class="mb_maincontent">
+       	  <div class="mb_contentbox">
+            	<div class="mbcontent_L_column">
+                	<div class="mbcont_Lbox">
+                		<div class="mbctL_name">
+                    	會員專區
+                    </div>
+                    	<div class="mbct_side_menu">
+                          <ul>
+                            <li class="mbmenu_off"><a href="http://reg.ezprice.com.tw/shoplist.php">我的收藏</a></li>
+                          	<li class="mbmenu_off"><a href="http://reg.ezprice.com.tw/cplist.php">瀏覽紀錄</a></li>
+                            <li class="mbmenu_on"><a href="http://reg.ezprice.com.tw/discount.php">我的購物金</a></li>                                                      
+                            
+                            <!--<li class="mbmenu_off"><a href="#">我的活動</a></li>-->
+                            <li class="mbmenu_off"><a href="http://reg.ezprice.com.tw/member.php">會員資料</a></li>
+                            <li class="mbmenu_off"><a href="http://reg.ezprice.com.tw/chpass.php">密碼修改</a></li>
+                          </ul>
+                        </div>
+                  </div>
+                </div>
+                <div class="mbcontent_R_column">
+                	<div class="mbcont_Rbox">
+						<div class="mbctR_title">
+                        	<div class="mbctR_Lcolumn">
+                            	我的購物金
+                            </div>
+                            <div class="mbctR_Rcolumn">
+                            	可用購物金：<strong>0</strong> 張
+						</div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="mbct_lz_box">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        	    <tbody><tr>
+                        	      <td align="left" valign="top" class="mbct_plttxt">使用平台</td>
+                        	      <td align="left" valign="top" class="mbct_exchtxt">兌換期限</td>
+                        	      <td align="left" valign="top" class="mbct_quotatxt">折價金額</td>
+                        	      <td align="left" valign="top" class="mbct_serialtxt">購物金兌換序號</td>
+                      	        </tr>
+                      	        
+                      	    </tbody></table>
+                      </div>
+                  </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+  </div>
+</div>
+
+    </div>
+</div>
+<div id="tailbox">
+    	<div class="fixwight">
+    	<div class="tail_logo">
+        	<div class="EZ_logo">
+            </div>
+        	<div class="EZ_slogan">
+            	輕鬆消費讓生活更美好！
+            </div>
+            <div class="EZ_rights">
+	            © 2016 EZprice Co., Ltd. All rights reserved.<br>常年法律顧問: 明沂律師事務所
+            </div>
+            <div class="EZ_slogan" style="font-size:15px;color:#393f4e;">
+                政策聲明
+            </div>
+            <div class="EZ_rights">
+                <a href="http://ezprice.com.tw/antifraud.php" class="option" style="color:#757d8f;">反詐騙聲明</a>
+                <a href="http://ezprice.com.tw/privacy_policy.php" class="option" style="color:#757d8f;">隱私及會員條款</a>
+            </div>
+        </div>
+        <div class="tail_list">
+        	<div class="tail_topic">
+            	<span class="tail_title">EZprice比價網</span>
+            	<a href="http://ezprice.com.tw/sitemap.php" class="option">網站地圖</a>
+                <a href="http://ezprice.com.tw/about_us.php" class="option">關於我們</a>
+                <a href="http://ezprice.com.tw/EZ_Careers.php" class="option">人才招募</a>
+                <a href="http://ezprice.com.tw/ezpd_contact_us.php" class="option fancybox fancybox.iframe">聯絡我們</a>
+                
+                <a class="option" href="http://card.ezprice.com.tw/" title="信用卡繳稅優惠">信用卡報稅</a><br>
+            </div>
+        	<div class="tail_topic">
+            	<span class="tail_title">合作方式</span>
+                <a href="http://ezprice.com.tw/ezpd_contact_us.php" class="option" target="_blank">刊登商品</a>
+                <a href="http://ezprice.com.tw/ezpd_contact_us.php?chk=1" class="option fancybox fancybox.iframe" target="_blank">刊登廣告</a>
+                <a href="http://pricetrack.ezprice.com.tw/" class="option" target="_blank">價格監控</a>
+                <a href="http://ezprice.com.tw/ezpd_contact_us.php" class="option" target="_blank">電商廣告</a>
+                <a href="http://b2b.ezprice.com.tw/" class="option" target="_blank">企業黃頁</a>
+                <a href="http://ezprice.com.tw/ezpd_contact_us.php" class="option fancybox fancybox.iframe" target="_blank">其他合作</a>
+            </div>
+
+            <div class="tail_topic">
+              <span class="tail_title">其他服務</span>
+                <a href="http://care.ezprice.com.tw/" class="option" title="保險比價">保險比價</a>
+                <a href="http://ezprice.com.tw/multi/product.php?cate_id=1&amp;cn=%E4%BF%A1%E7%94%A8%E5%8D%A1&amp;pn=%E4%BF%A1%E7%94%A8%E5%8D%A1&amp;default=index" class="option">信用卡比較</a>
+                <a href="http://guide.ezprice.com.tw/" class="option">購物達人</a>
+                <a href="http://elite.ezprice.com.tw/" class="option">電商百大人才</a>
+                <a href="http://news.ezprice.com.tw/" class="option">公關室</a>
+                <a href="http://ezprice.com.tw/extensions/?utm_source=ez-bar&amp;utm_medium=plugin" class="option">比價神器</a>
+            </div>
+        	<div class="tail_topic">
+            	<span class="tail_title">瀏覽方式</span>
+                <a href="http://ezprice.com.tw/?e=101" class="option">電腦版</a>
+                <a href="http://m.ezprice.com.tw/?e=111" class="option">手機版</a>
+                <a href="https://itunes.apple.com/tw/app/ezprice-zhao-bian-yi/id778505069?l=zh&amp;mt=8" class="option" title="EZprice 找便宜">iOS App</a>
+                <a href="https://play.google.com/store/apps/details?id=ez.ezprice2" class="option" title="EZprice 找便宜">Android App</a>
+                <a href="http://ezprice.com.tw/extensions/" class="option" title="瀏覽器外掛">EZprice找便宜</a>
+            </div>
+        	<div class="tail_cooperation">
+            	<span class="tail_title">合作廠商</span>
+				<div class="clear"></div>
+                <a class="co_logo">
+                	<img src="./會員專區 - EZprice 比價網_files/co-yahoo.png" height="24">
+                </a>
+                <a class="co_logo">
+                	<img src="./會員專區 - EZprice 比價網_files/co-momo.png" height="24">
+                </a>
+                <div class="clear"></div>
+                <a class="co_logo">
+                	<img src="./會員專區 - EZprice 比價網_files/co-etmall.png" height="24">
+                </a>
+                <a class="co_logo">
+                	<img src="./會員專區 - EZprice 比價網_files/co-umall.png" height="24">
+                </a>
+				<div class="clear"></div>
+								<a class="co_logo">
+                	<img src="./會員專區 - EZprice 比價網_files/co-udn.png" height="24">
+                </a>
+                <a class="co_logo">
+                	<img src="./會員專區 - EZprice 比價網_files/co-gohappy.png" height="24">
+                </a>
+				<div class="clear"></div>
+                <a href="http://ezprice.com.tw/partners.php" class="option">更多廠商...</a>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="tail_gotop">
+        	<a href="http://reg.ezprice.com.tw/discount.php#" class="gotop_btn">回最上層</a>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+</div>
+<div class="more_product"><div class="fixwight" style="width:100%;"><li class="border_bottom shopli oth_view" id="watching_more_index"></li></div><div class="clear"></div></div>
+
+    <div class="special_salebox_pop" style="display:none">
+    	<div class="functionbox">
+        	<a href="javascript:void(0)" onclick="javascript:ezpushac(0)"><img src="./會員專區 - EZprice 比價網_files/icon_special_cross.gif" width="15" height="15"></a>
+            <div class="clear"></div>
+        </div>
+        
+    </div>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+			$('.fancybox').fancybox({
+        		autoDimensions : false,
+						padding        : 0,
+         		autoScale      : false,
+         		openEffect		 : 'none',
+        		closeEffect		 : 'none',
+		        transitionIn   : 'none',
+		        transitionOut  : 'none',
+		        showCloseButton: true,
+						width					 :'572',
+						height				 :'492',
+						type					 :'iframe',
+						scrolling   	 : 'no',
+						iframe: {
+              preload: false // fixes issue with iframe and IE
+          	}
+				});
+				$('.fancybox2').fancybox({
+        		autoDimensions : false,
+						padding        : 0,
+         		autoScale      : false,
+         		openEffect		 : 'none',
+        		closeEffect		 : 'none',
+		        transitionIn   : 'none',
+		        transitionOut  : 'none',
+		        showCloseButton: false,
+						width					 :'620',
+						height				 :'450',
+						type					 :'iframe',
+						scrolling   	 : 'no',
+						iframe: {
+              preload: false // fixes issue with iframe and IE
+          	}
+				});
+		});
+    function fancyBoxClose(){
+				        $.fancybox.close();
+		}
+</script>
+<script type="text/javascript" src="./會員專區 - EZprice 比價網_files/conversion.js"></script>
+
+
+</body>
+</html>
