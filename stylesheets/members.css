@@ -1,0 +1,265 @@
+/* line 1, ../sass/mixins/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 22, ../sass/mixins/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 26, ../sass/mixins/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 29, ../sass/mixins/_reset.scss */
+ol, ul, li {
+  list-style: none;
+}
+
+/* line 32, ../sass/mixins/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 35, ../sass/mixins/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 40, ../sass/mixins/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 45, ../sass/mixins/_reset.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 49, ../sass/mixins/_reset.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 1, ../sass/mixins/_main.scss */
+body {
+  color: #333333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, Verdana, "Microsoft JhengHei", \5FAE\8EDF\6B63\9ED1\9AD4, \65B0\7D30\660E\9AD4;
+  background: #eee;
+}
+
+/* line 7, ../sass/mixins/_main.scss */
+button {
+  cursor: pointer;
+}
+
+/* line 24, ../sass/mixins/_main.scss */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+/* line 29, ../sass/mixins/_main.scss */
+.clearfix:after {
+  clear: both;
+  overflow: auto;
+  zoom: 1;
+}
+
+/* line 40, ../sass/mixins/_main.scss */
+.top-header {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  background: #ff752b;
+  height: 50px;
+  color: #fff;
+  margin-bottom: 10px;
+  top: 0;
+}
+/* line 24, ../sass/mixins/_main.scss */
+.top-header:before, .top-header:after {
+  content: " ";
+  display: table;
+}
+/* line 29, ../sass/mixins/_main.scss */
+.top-header:after {
+  clear: both;
+  overflow: auto;
+  zoom: 1;
+}
+/* line 52, ../sass/mixins/_main.scss */
+.top-header .sb-toggle-left {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  background: #ff8e44;
+}
+/* line 58, ../sass/mixins/_main.scss */
+.top-header .sb-toggle-left i {
+  padding: 14px;
+  font-size: 22px;
+}
+/* line 65, ../sass/mixins/_main.scss */
+.top-header h1 {
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+}
+
+/* line 3, ../sass/_mygoodies.scss */
+#tabs {
+  position: relative;
+  top: 50px;
+  width: 100%;
+  overflow: hidden;
+  margin: 1em 0 2em;
+  font-weight: 300;
+}
+/* line 11, ../sass/_mygoodies.scss */
+#tabs > nav {
+  text-align: center;
+}
+/* line 13, ../sass/_mygoodies.scss */
+#tabs > nav ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  list-style: none;
+  display: inline-block;
+}
+/* line 20, ../sass/_mygoodies.scss */
+#tabs > nav ul li {
+  border: 1px solid #d9d9d9;
+  background: #d9d9d9;
+  border-bottom: none;
+  margin: 0 3px;
+  width: 30.8%;
+  display: block;
+  float: left;
+  position: relative;
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  -ms-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+}
+/* line 34, ../sass/_mygoodies.scss */
+#tabs > nav ul li.tab-current {
+  border: 1px solid #FFF;
+  background: #FFF;
+  border-bottom: none;
+  z-index: 100;
+}
+/* line 40, ../sass/_mygoodies.scss */
+#tabs > nav ul li.tab-current a {
+  color: #ff752b;
+}
+/* line 46, ../sass/_mygoodies.scss */
+#tabs > nav a {
+  color: #898989;
+  display: block;
+  font-size: 14px;
+  line-height: 2.5;
+  padding: 0 1.25em;
+  white-space: nowrap;
+}
+/* line 56, ../sass/_mygoodies.scss */
+#tabs .content {
+  background: #fff;
+  margin: -2px 3px 0 3px;
+}
+/* line 61, ../sass/_mygoodies.scss */
+#tabs .content section {
+  display: none;
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* line 66, ../sass/_mygoodies.scss */
+#tabs .content section li.goo-list {
+  padding: 12px 10px 8px;
+  border-bottom: 1px solid #d9d9d9;
+  position: relative;
+}
+/* line 72, ../sass/_mygoodies.scss */
+#tabs .content section li.goo-list:hover {
+  background: #fff5ef;
+}
+/* line 76, ../sass/_mygoodies.scss */
+#tabs .content section li.goo-list .con-left {
+  float: left;
+  width: 76%;
+}
+/* line 81, ../sass/_mygoodies.scss */
+#tabs .content section li.goo-list h2 {
+  font-size: 15px;
+  line-height: 1.6em;
+  width: 90%;
+}
+/* line 87, ../sass/_mygoodies.scss */
+#tabs .content section li.goo-list span {
+  font-size: 13px;
+  color: #7e8491;
+}
+/* line 92, ../sass/_mygoodies.scss */
+#tabs .content section li.goo-list button {
+  width: 70px;
+  font-size: 14px;
+  padding: 10px;
+  background: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 103, ../sass/_mygoodies.scss */
+#tabs .content section li.goo-list button.receive-btn {
+  color: #ff752b;
+  border: 1px solid #ff752b;
+}
+/* line 107, ../sass/_mygoodies.scss */
+#tabs .content section li.goo-list button.receive-btn:hover {
+  background: #ff752b;
+  color: #fff;
+}
+/* line 113, ../sass/_mygoodies.scss */
+#tabs .content section li.goo-list button.got-btn {
+  border: 1px solid #ff752b;
+  background: #ff752b;
+  color: #fff;
+  font-size: 18px;
+  cursor: inherit;
+}
+/* line 121, ../sass/_mygoodies.scss */
+#tabs .content section li.goo-list button.expire-btn {
+  background: #d9d9d9;
+  color: #898989;
+  cursor: inherit;
+  border: 1px solid #d9d9d9;
+}
+/* line 130, ../sass/_mygoodies.scss */
+#tabs .content section.content-current {
+  display: block;
+}

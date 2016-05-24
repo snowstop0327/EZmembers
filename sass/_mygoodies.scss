@@ -1,0 +1,134 @@
+// tabs
+
+#tabs {
+	position: relative;
+	top: 50px;
+  width: 100%;
+  overflow: hidden;
+  margin: 1em 0 2em;
+  font-weight: 300;
+
+    > nav {
+    	text-align: center;
+    	ul {
+    		padding: 0;
+		    margin: 0;
+		    width: 100%;
+		    list-style: none;
+		    display: inline-block;
+		    // border-bottom: 1px solid #fff;
+		    li {
+		    	border: 1px solid $bg-gray-nomal;
+		    	background: $bg-gray-nomal;
+			    border-bottom: none;
+			    margin: 0 3px;
+			    width: 30.8%;
+			    display: block;
+			    float: left;
+			    position: relative;
+			    -webkit-border-radius: 4px 4px 0 0;
+				  -moz-border-radius: 4px 4px 0 0;
+				  -ms-border-radius: 4px 4px 0 0;
+				  border-radius: 4px 4px 0 0;
+		    }
+		    li.tab-current {
+		    	border: 1px solid #FFF;
+			    background: #FFF;
+			    border-bottom: none;
+			    z-index: 100;
+			    
+			    a {
+			    	color: $orange;
+
+			    } 
+		    }
+    	}
+    	a {
+    		color: $text-color2;
+		    display: block;
+		    font-size: 14px;
+		    line-height: 2.5;
+		    padding: 0 1.25em;
+		    white-space: nowrap;
+    	}
+    }
+
+  .content {
+  	background: #fff;
+  	// width: 94%;
+  	margin: -2px 3px 0 3px;
+
+  	section {
+  		display: none;
+  		max-width: 960px;
+  		margin: 0 auto;
+
+  		li.goo-list {
+  			padding: 12px 10px 8px ;
+  			border-bottom: 1px solid $bg-gray-nomal;
+  			position: relative;
+  			// display: flex;
+
+  			&:hover {
+  				background: #fff5ef;
+  			}
+
+  			.con-left {
+  				float: left;
+  				width: 76%;
+  			}
+
+  			h2 {
+  				font-size: 15px;
+  				line-height: 1.6em;
+  				width: 90%;
+  			}
+
+  			span {
+  				font-size: 13px;
+  				color: $text-color-light;
+  			}
+
+  			button {
+  				width: 70px;
+  				font-size: 14px;
+  				padding: 10px;
+  				background: none;
+  				-webkit-border-radius: 4px;
+				  -moz-border-radius: 4px;
+				  -ms-border-radius: 4px;
+				  border-radius: 4px;
+  			}
+
+  			button.receive-btn {
+					color: $orange;
+					border: 1px solid $orange;
+
+					&:hover {
+						background: $orange;
+						color: #fff;
+					}
+  			}
+
+  			button.got-btn {
+  				border: 1px solid $orange;
+  				background: $orange;
+  				color: #fff;
+  				font-size: 18px;
+  				cursor: inherit;
+  			}
+
+  			button.expire-btn {
+  				background: $bg-gray-nomal;
+  				color: $text-color2;
+  				cursor: inherit;
+  				border: 1px solid $bg-gray-nomal;
+  			}
+  		}
+  	}
+
+  	section.content-current {
+  		display: block;
+  	}
+  }
+}
