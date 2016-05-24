@@ -97,7 +97,6 @@ button {
   background: #ff752b;
   height: 50px;
   color: #fff;
-  margin-bottom: 10px;
   top: 0;
 }
 /* line 24, ../sass/mixins/_main.scss */
@@ -111,19 +110,19 @@ button {
   overflow: auto;
   zoom: 1;
 }
-/* line 59, ../sass/mixins/_main.scss */
+/* line 58, ../sass/mixins/_main.scss */
 .top-header .sb-toggle-left {
   width: 50px;
   height: 50px;
   padding: 0;
   background: #ff8e44;
 }
-/* line 65, ../sass/mixins/_main.scss */
+/* line 64, ../sass/mixins/_main.scss */
 .top-header .sb-toggle-left i {
   padding: 14px;
   font-size: 22px;
 }
-/* line 72, ../sass/mixins/_main.scss */
+/* line 71, ../sass/mixins/_main.scss */
 .top-header h1 {
   font-size: 20px;
   line-height: 50px;
@@ -281,7 +280,7 @@ button {
   font-size: 21px;
   line-height: 1.6em;
   padding-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 /* line 155, ../sass/_mygoodies.scss */
 .ct-box .serial-box {
@@ -300,11 +299,11 @@ button {
 }
 /* line 169, ../sass/_mygoodies.scss */
 .ct-box button#copy-btn {
-  margin: 5px 0 10px;
+  margin: 5px 0 15px;
   border: 1px solid #ff752b;
   background: inherit;
   color: #ff752b;
-  font-size: 14px;
+  font-size: 22px;
   font-weight: bold;
   padding: 8px 10px;
   -webkit-border-radius: 4px;
@@ -314,12 +313,12 @@ button {
 }
 /* line 179, ../sass/_mygoodies.scss */
 .ct-box button#copy-btn i {
-  font-size: 18px;
+  font-size: 20px;
   margin-right: 5px;
 }
 /* line 185, ../sass/_mygoodies.scss */
 .ct-box span.result-text {
-  font-size: 24px;
+  font-size: 18px;
   color: #c1272d;
   display: block;
   padding-bottom: 10px;
@@ -347,4 +346,17 @@ button {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px;
+}
+
+/* line 215, ../sass/_mygoodies.scss */
+.goo-iframe-header {
+  background: #eee;
+  color: #333333;
+}
+
+/* line 219, ../sass/_mygoodies.scss */
+.goo-iframe {
+  width: 100vw;
+  height: 100vh;
+  margin-top: 50px;
 }

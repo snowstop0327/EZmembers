@@ -149,7 +149,7 @@
 		font-size: 21px;
 		line-height: 1.6em;
 		padding-top: 10px;
-		margin-bottom: 10px;
+		margin-bottom: 20px;
 	}
 
 	.serial-box {
@@ -167,23 +167,23 @@
 		}
 	}
 	button#copy-btn {
-		margin: 5px 0 10px;
+		margin: 5px 0 15px;
 	  border: 1px solid $orange;
 	  background: inherit;
 	  color: $orange;
-	  font-size: 14px;
+	  font-size: 22px;
 	  font-weight: bold;
 	  padding: 8px 10px;
 	  @include btnradius;
 
 	  i {
-	  	font-size: 18px;
+	  	font-size: 20px;
 	  	margin-right: 5px;
 	  }
 	}
 
 	span.result-text {
-		font-size: 24px;
+		font-size: 18px;
 		color: $red;
 		display: block;
 		padding-bottom: 10px;
@@ -209,4 +209,15 @@
 		color: $orange;
 		@include btnradius;
 	}
+}
+
+//iframe
+.goo-iframe-header {
+	background: $bg-gray;
+	color: $text-color;
+}
+.goo-iframe {
+	width: 100vw;
+	height: 100vh;
+	margin-top:50px;
 }
