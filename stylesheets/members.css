@@ -274,19 +274,20 @@ button {
   text-align: center;
   line-height: 25px;
   padding-bottom: 30px;
+  height: 100vh;
 }
-/* line 148, ../sass/_mygoodies.scss */
+/* line 149, ../sass/_mygoodies.scss */
 .ct-box h2 {
   font-size: 21px;
   line-height: 1.6em;
   padding-top: 10px;
   margin-bottom: 20px;
 }
-/* line 155, ../sass/_mygoodies.scss */
+/* line 156, ../sass/_mygoodies.scss */
 .ct-box .serial-box {
   margin: 15px 5px;
 }
-/* line 158, ../sass/_mygoodies.scss */
+/* line 159, ../sass/_mygoodies.scss */
 .ct-box .serial-box span.serial-text {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -297,7 +298,7 @@ button {
   font-size: 30px;
   padding: 5px 10px;
 }
-/* line 169, ../sass/_mygoodies.scss */
+/* line 170, ../sass/_mygoodies.scss */
 .ct-box button#copy-btn {
   margin: 5px 0 15px;
   border: 1px solid #ff752b;
@@ -311,12 +312,12 @@ button {
   -ms-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 179, ../sass/_mygoodies.scss */
+/* line 180, ../sass/_mygoodies.scss */
 .ct-box button#copy-btn i {
   font-size: 20px;
   margin-right: 5px;
 }
-/* line 185, ../sass/_mygoodies.scss */
+/* line 186, ../sass/_mygoodies.scss */
 .ct-box span.result-text {
   font-size: 18px;
   color: #c1272d;
@@ -326,16 +327,16 @@ button {
   width: 95%;
   margin: 0 auto 10px;
 }
-/* line 195, ../sass/_mygoodies.scss */
+/* line 196, ../sass/_mygoodies.scss */
 .ct-box p {
   font-size: 13px;
 }
-/* line 199, ../sass/_mygoodies.scss */
+/* line 200, ../sass/_mygoodies.scss */
 .ct-box strong {
   color: #c1272d;
   font-weight: bold;
 }
-/* line 204, ../sass/_mygoodies.scss */
+/* line 205, ../sass/_mygoodies.scss */
 .ct-box a.goto-btn {
   margin-top: 10px;
   display: inline-block;
@@ -348,13 +349,13 @@ button {
   border-radius: 4px;
 }
 
-/* line 215, ../sass/_mygoodies.scss */
+/* line 216, ../sass/_mygoodies.scss */
 .goo-iframe-header {
   background: #eee;
   color: #333333;
 }
 
-/* line 219, ../sass/_mygoodies.scss */
+/* line 220, ../sass/_mygoodies.scss */
 .goo-iframe {
   width: 100vw;
   height: 100vh;
