@@ -224,7 +224,9 @@ button {
   color: #7e8491;
 }
 /* line 92, ../sass/_mygoodies.scss */
-#tabs .content section li.goo-list button {
+#tabs .content section li.goo-list a {
+  display: inline-block;
+  text-align: center;
   width: 70px;
   font-size: 14px;
   padding: 10px;
@@ -234,54 +236,58 @@ button {
   -ms-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 103, ../sass/_mygoodies.scss */
-#tabs .content section li.goo-list button.receive-btn {
+/* line 104, ../sass/_mygoodies.scss */
+#tabs .content section li.goo-list a:hover {
+  text-decoration: none;
+}
+/* line 109, ../sass/_mygoodies.scss */
+#tabs .content section li.goo-list a.receive-btn {
   color: #ff752b;
   border: 1px solid #ff752b;
 }
-/* line 107, ../sass/_mygoodies.scss */
-#tabs .content section li.goo-list button.receive-btn:hover {
+/* line 113, ../sass/_mygoodies.scss */
+#tabs .content section li.goo-list a.receive-btn:hover {
   background: #ff752b;
   color: #fff;
 }
-/* line 113, ../sass/_mygoodies.scss */
-#tabs .content section li.goo-list button.got-btn {
+/* line 119, ../sass/_mygoodies.scss */
+#tabs .content section li.goo-list a.got-btn {
   border: 1px solid #ff752b;
   background: #ff752b;
   color: #fff;
   font-size: 18px;
   cursor: inherit;
 }
-/* line 121, ../sass/_mygoodies.scss */
-#tabs .content section li.goo-list button.expire-btn {
+/* line 127, ../sass/_mygoodies.scss */
+#tabs .content section li.goo-list a.expire-btn {
   background: #d9d9d9;
   color: #898989;
   cursor: inherit;
   border: 1px solid #d9d9d9;
 }
-/* line 130, ../sass/_mygoodies.scss */
+/* line 137, ../sass/_mygoodies.scss */
 #tabs .content section.content-current {
   display: block;
 }
 
-/* line 136, ../sass/_mygoodies.scss */
+/* line 143, ../sass/_mygoodies.scss */
 .ct-box {
   text-align: center;
   line-height: 25px;
   padding-bottom: 30px;
 }
-/* line 141, ../sass/_mygoodies.scss */
+/* line 148, ../sass/_mygoodies.scss */
 .ct-box h2 {
   font-size: 21px;
   line-height: 1.6em;
   padding-top: 10px;
   margin-bottom: 10px;
 }
-/* line 148, ../sass/_mygoodies.scss */
+/* line 155, ../sass/_mygoodies.scss */
 .ct-box .serial-box {
   margin: 15px 5px;
 }
-/* line 151, ../sass/_mygoodies.scss */
+/* line 158, ../sass/_mygoodies.scss */
 .ct-box .serial-box span.serial-text {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -292,7 +298,7 @@ button {
   font-size: 30px;
   padding: 5px 10px;
 }
-/* line 162, ../sass/_mygoodies.scss */
+/* line 169, ../sass/_mygoodies.scss */
 .ct-box button#copy-btn {
   margin: 5px 0 10px;
   border: 1px solid #ff752b;
@@ -306,12 +312,12 @@ button {
   -ms-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 172, ../sass/_mygoodies.scss */
+/* line 179, ../sass/_mygoodies.scss */
 .ct-box button#copy-btn i {
   font-size: 18px;
   margin-right: 5px;
 }
-/* line 178, ../sass/_mygoodies.scss */
+/* line 185, ../sass/_mygoodies.scss */
 .ct-box span.result-text {
   font-size: 24px;
   color: #c1272d;
@@ -321,16 +327,16 @@ button {
   width: 95%;
   margin: 0 auto 10px;
 }
-/* line 188, ../sass/_mygoodies.scss */
+/* line 195, ../sass/_mygoodies.scss */
 .ct-box p {
   font-size: 13px;
 }
-/* line 192, ../sass/_mygoodies.scss */
+/* line 199, ../sass/_mygoodies.scss */
 .ct-box strong {
   color: #c1272d;
   font-weight: bold;
 }
-/* line 197, ../sass/_mygoodies.scss */
+/* line 204, ../sass/_mygoodies.scss */
 .ct-box a.goto-btn {
   margin-top: 10px;
   display: inline-block;
