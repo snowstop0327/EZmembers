@@ -132,3 +132,74 @@
   	}
   }
 }
+
+.ct-box {
+	text-align: center;
+	line-height: 25px;
+	padding-bottom: 30px;
+
+	h2  {
+		font-size: 21px;
+		line-height: 1.6em;
+		padding-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.serial-box {
+		margin: 15px 5px;
+
+			span.serial-text {
+			-webkit-border-radius: 4px;
+		  -moz-border-radius: 4px;
+		  -ms-border-radius: 4px;
+		  border-radius: 4px;
+		  background: $bg-gray-light;
+		  color: $orange;
+		  font-size: 30px;
+		  padding: 5px 10px;
+		}
+	}
+	button#copy-btn {
+		margin: 5px 0 10px;
+	  border: 1px solid $orange;
+	  background: inherit;
+	  color: $orange;
+	  font-size: 14px;
+	  font-weight: bold;
+	  padding: 8px 10px;
+	  @include btnradius;
+
+	  i {
+	  	font-size: 18px;
+	  	margin-right: 5px;
+	  }
+	}
+
+	span.result-text {
+		font-size: 24px;
+		color: $red;
+		display: block;
+		padding-bottom: 10px;
+		border-bottom: 1px solid $bg-gray-nomal;
+		width: 95%;
+		margin: 0 auto 10px;
+	}
+
+	p {
+		font-size: 13px;
+	}
+
+	strong {
+		color: $red;
+		font-weight: bold;
+	}
+
+	a.goto-btn {
+		margin-top: 10px;
+		display: inline-block;
+		border: 1px solid $orange;
+		padding: 8px 10px;
+		color: $orange;
+		@include btnradius;
+	}
+}

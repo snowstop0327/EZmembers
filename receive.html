@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <title>我的好康</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="stylesheets/slidebars.min.css">
+    <link rel="stylesheet" href="stylesheets/members.css">
+    <link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+    <!-- header -->
+        <div class="top-header navbar navbar-inverse navbar-fixed-top sb-slide " role="navigation">
+            <!-- Left Control -->
+            <div class="sb-toggle-left navbar-left">
+                <i class="fa fa-bars"></i>
+            </div>
+            <h1>我的好康</h1>
+        </div>
+        <!-- header -->
+        <div id="sb-site">
+        <!-- tab -->
+        <div id="tabs" class="tabs">
+          <nav>
+            <ul>
+              <li><a href="#section-1" class="icon-shop"><span>未領取(6)</span></a></li>
+              <li><a href="#section-2" class="icon-cup"><span>已領取(2)</span></a></li>
+              <li><a href="#section-3" class="icon-food"><span>所有好康(8)</span></a></li>
+            </ul>
+          </nav>
+          <!-- content -->
+          <div class="content">
+            <section id="section-1">
+              <div class="ct-box">
+                <h2>BenQ電視購物金</h2>
+                <div class="serial-box">
+                <span class="serial-text">eRosd192</span>
+                </div>
+                <button id="copy-btn"><i class="fa fa-files-o"></i>複製序號</button>
+                <span class="result-text">領取成功！</span>
+                <p>恭喜您成功兌換購物金，於各平台購買BenQ護眼檯燈<br/>
+                    輸入此序號可現折<strong>500</strong>元購物金喔！<br/>
+                    （一組序號限使用一次）</p>
+                <a href="#" class="goto-btn">前往OOO登錄序號</a>
+              </div>
+            </section>
+            <section id="section-2">
+              
+            </section>
+            <section id="section-3">
+              
+            </section>
+          </div>
+        </div>
+        </div>
+    
+    <!-- Slidebars -->
+    <div class="sb-slidebar sb-left sb-style-push sb-width-custom" data-sb-width="80%">
+        <nav>
+            <ul class="sb-menu">
+                <li>
+                    <div class="notlogin-area" style="display:none;">
+                        <a href="http://testlink.com/regist" class="btn btn-default btn-register">註冊</a>
+                        <a href="http://testlink.com/login" class="btn btn-login">登入</a>
+                    </div>
+                    <a href="user_profile.html" class="login-area clearfix"><!-- ok -->
+                        <span class="user-img">
+                <img src="http://i.imgur.com/NbWreex.jpg" alt="user-img">
+              </span>
+                        <span class="user-name">Jennifer Chen</span>
+                    </a>
+                </li>
+                <li class="sb-close"><a href="http://testlink.com/sliderBar01" class="list">首頁</a></li>
+                <li class="sb-close"><a href="http://testlink.com/sliderBar01" class="list">商品分類</a></li>
+                <li class="sb-close"><a href="http://testlink.com/sliderBar01" class="list">平台好康</a></li>
+                <li class="sb-close line">&nbsp;</li>
+                <li class="sb-close"><a href="http://testlink.com/sliderBar01" class="list">我的收藏</a></li>
+                <li class="sb-close"><a href="http://testlink.com/sliderBar01" class="list">帳號維護</a></li>
+                <li class="sb-close line">&nbsp;</li>
+                <li class="logout"><a href="http://testlink.com/logout" class="btn btn-login">登出</a></li>
+            </ul>
+        </nav>
+    </div>
+    </div>
+    
+    <!-- Back to top -->
+    <!-- <a href="#0" class="cd-top">Top</a> -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Slidebars -->
+    <script src="javascripts/slidebars.min.js"></script>
+    <!-- tabs -->
+    <script src="javascripts/cbpFWTabs.js"></script>
+    <script>
+      new CBPFWTabs( document.getElementById( 'tabs' ) );
+    </script>
+  
+    <script>
+    (function($) {
+        $(document).ready(function() {
+            // Initiate Slidebars
+            $.slidebars({
+                scrollLock: true // true or false
+            });
+        });
+    })(jQuery);
+    </script>
+    <!-- navbar JS-->
+    <script>
+    $(document).scroll(function(e) {
+        var scrollTop = $(document).scrollTop();
+        if (scrollTop > 50) {
+            $('.index-scroll-fix').hide();
+            $('.index-content').hide();
+            $('.ez-app').hide();
+            $('.navbar-fixed-top').css('top', '0px');
+            $('.main-content').css('margin-top', '205px');
+            $('.head-content').show();
+        } else {
+            $('.index-scroll-fix').show();
+            $('.index-content').show();
+            $('.ez-app').show();
+            // $('.navbar-fixed-top').css('top', '70px');
+            $('.main-content').css('margin-top', '205px');
+            $('.head-content').hide();
+        }
+    });
+    $(function() {
+        $('#srhkw2').focusin(function(event) {
+            $('html, body').animate({
+                scrollTop: $("#srhkw2").offset().top
+            }, 600);
+        });
+        $('#srhkw1').focusout(function() {
+            $('.search-input-content').hide().css('position', 'absolute');
+            $('.overlay-bg').hide();
+        });
+        $('#srhkw1').focusin(function() {
+            $('.search-input-content').show().css('position', 'fixed');
+            $('.overlay-bg').show();
+        });
+        $('#srhkw1').click(function() {
+            $('.search-input-content').removeClass("hiddenBox");
+        });
+    });
+    </script>
+    <!-- Goto Top JS-->
+    <script>
+    jQuery(document).ready(function($) {
+        // browser window scroll (in pixels) after which the "back to top" link is shown
+        var offset = 200,
+            //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+            offset_opacity = 1200,
+            //duration of the top scrolling animation (in ms)
+            scroll_top_duration = 700,
+            //grab the "back to top" link
+            $back_to_top = $('.cd-top');
+        //hide or show the "back to top" link
+        $(window).scroll(function() {
+            ($(this).scrollTop() > offset) ? $back_to_top.addClass('cd-is-visible'): $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if ($(this).scrollTop() > offset_opacity) {
+                $back_to_top.addClass('cd-fade-out');
+            }
+        });
+        //smooth scroll to top
+        $back_to_top.on('click', function(event) {
+            event.preventDefault();
+            $('body,html').animate({
+                scrollTop: 0,
+            }, scroll_top_duration);
+        });
+    });
+    </script>
+    <!-- carousel swipe js -->
+    <script src="javascripts/carousel-swipe.js"></script>
+    <script type="text/javascript">
+    $("#ezguide,#platform").carousel({
+        swipe: 1,
+        interval: 5000
+    });
+    </script>
+    <!--jquery.mobile.js only for index.html -->
+    <script src="javascripts/jquery.mobile.custom.min.js"></script>
+    <script>
+    $(function() {
+        $(".tab-content").swiperight(function() {
+            var $tab = $('#tablist .active').prev();
+            if ($tab.length > 0)
+                $tab.find('a').tab('show');
+        });
+        $(".tab-content").swipeleft(function() {
+            var $tab = $('#tablist .active').next();
+            if ($tab.length > 0)
+                $tab.find('a').tab('show');
+        });
+    });
+    </script>
+    <!--to remove jquery mobile loading message -->
+    <script>
+    $(document).on("pageshow", "[data-role='page']", function() {
+        $('div.ui-loader').remove();
+    });
+    </script>
+</body>
+
+</html>
