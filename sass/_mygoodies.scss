@@ -155,7 +155,7 @@
 	.serial-box {
 		margin: 15px 5px;
 
-			span.serial-text {
+			textarea.serial-text {
 			-webkit-border-radius: 4px;
 		  -moz-border-radius: 4px;
 		  -ms-border-radius: 4px;
@@ -164,6 +164,9 @@
 		  color: $orange;
 		  font-size: 30px;
 		  padding: 5px 15px;
+		  width: 240px;
+		  height: 40px;
+		  text-align: center;
 		}
 	}
 	button#copy-btn {
@@ -194,6 +197,7 @@
 		border-top: 1px solid $bg-gray-nomal;
 		padding-top: 10px;
 		font-size: 13px;
+		margin: 10px;
 	}
 
 	strong {
