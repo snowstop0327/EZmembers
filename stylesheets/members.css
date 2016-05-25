@@ -157,6 +157,36 @@ button {
   display: none;
 }
 
+/* line 92, ../sass/mixins/_main.scss */
+#back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 9999;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  background: #ff8e44;
+  color: #FFF;
+  cursor: pointer;
+  border: 0;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: opacity 0.2s ease-out;
+  opacity: 0;
+}
+/* line 111, ../sass/mixins/_main.scss */
+#back-to-top:hover {
+  background: #ff752b;
+}
+
+/* line 115, ../sass/mixins/_main.scss */
+#back-to-top.show {
+  opacity: 1;
+}
+
 /* line 1, ../sass/_mygoodies.scss */
 .iner-title {
   display: none;
@@ -521,7 +551,7 @@ button {
     float: left;
     background: #FFF;
     padding: 20px;
-    width: 200px;
+    width: 180px;
   }
   /* line 79, ../sass/_grid.scss */
   .container .mbcontent_L_column .title_Lbox {
@@ -562,7 +592,7 @@ button {
   /* line 120, ../sass/_grid.scss */
   #tabs {
     margin: 0 auto;
-    width: 73%;
+    width: 75%;
     float: right;
   }
   /* line 125, ../sass/_grid.scss */
@@ -594,5 +624,10 @@ button {
   #tabs .content {
     margin: -2px auto;
     padding-bottom: 20px;
+  }
+
+  /* line 157, ../sass/_grid.scss */
+  .ct-box {
+    height: auto;
   }
 }
