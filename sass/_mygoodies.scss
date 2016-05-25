@@ -144,13 +144,12 @@
 	text-align: center;
 	line-height: 25px;
 	padding-bottom: 30px;
-	height: 100vh;
+	height: 80vh;
 
 	h2  {
 		font-size: 21px;
 		line-height: 1.6em;
-		padding-top: 10px;
-		margin-bottom: 20px;
+		padding-top: 20px;
 	}
 
 	.serial-box {
@@ -164,14 +163,14 @@
 		  background: $bg-gray-light;
 		  color: $orange;
 		  font-size: 30px;
-		  padding: 5px 10px;
+		  padding: 5px 15px;
 		}
 	}
 	button#copy-btn {
 		margin: 5px 0 15px;
 	  border: 1px solid $orange;
-	  background: inherit;
-	  color: $orange;
+	  background: $orange;
+	  color: #FFF;
 	  font-size: 22px;
 	  font-weight: bold;
 	  padding: 8px 10px;
@@ -187,13 +186,13 @@
 		font-size: 18px;
 		color: $red;
 		display: block;
-		padding-bottom: 10px;
-		border-bottom: 1px solid $bg-gray-nomal;
 		width: 95%;
-		margin: 0 auto 10px;
+		margin: 0 auto 20px;
 	}
 
 	p {
+		border-top: 1px solid $bg-gray-nomal;
+		padding-top: 10px;
 		font-size: 13px;
 	}
 
@@ -214,8 +213,17 @@
 
 //iframe
 .goo-iframe-header {
-	background: $bg-gray;
+	background: #ccc;
 	color: $text-color;
+	box-shadow: 1px 2px 3px rgba(0,0,0,0.6);
+
+	.sb-toggle-left {
+		background: #999;
+		i {
+			font-size: 30px;
+			margin: -6px 0 0 3px;
+		}
+	}
 }
 .goo-iframe {
 	width: 100vw;
