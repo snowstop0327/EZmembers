@@ -44,6 +44,10 @@ button {
 	border-radius: 4px;
 }
 
+.pc-header {
+	display: none;
+}
+
 .top-header {
 	position: fixed;
 	z-index: 999;
@@ -73,5 +77,15 @@ button {
 		font-size: 20px;
 		line-height: 50px;
 		text-align: center;
+	}
+}
+
+.container {
+	position: relative;
+	top: 50px;
+	@include clearfix;
+
+	.mbcontent_L_column {
+		display: none;
 	}
 }

@@ -1,0 +1,157 @@
+// main contnet
+//
+@media screen and (min-width:1024px) {
+	div.top-header {
+		display: none;
+	}
+
+	.pc-header {
+		display: block;
+		background: $bg-dark01;
+		height: 64px;
+
+		.head-logo {
+			display: block;
+			width: 220px;
+			height: 64px;
+			background: #ff6706 url(http://ezprice.com.tw/style/images/EZprice-logo.jpg) center no-repeat;
+			float: left;
+		}
+
+		.user-info {
+			float: right;
+			background: $bg-dark02;
+			padding: 18px 10px 19px 10px;
+		    height: 27px;
+		    position: relative;
+
+		    .profilepic {
+		    	float: left;
+		    	display: inline-block;
+		    	width: 30px;
+		    	height: 30px;
+		    	overflow: hidden;
+		    	text-align: center;
+		    	background-position: center;
+		    	background-repeat: no-repeat;
+		    	-moz-background-size:cover;        /*for Firefox*/
+				-webkit-background-size:cover;        /*for Google Chrome、Safari*/
+				-o-background-size:cover;        /*for Opera*/
+				background-size:cover;        /*for IE*/
+		    }
+
+		    .user-name {
+		    	float: left;
+			    height: 30px;
+			    vertical-align: middle;
+			    max-width: 140px;
+			    font-size: 13px;
+			    line-height: 30px;
+			    color: white;
+			    white-space: nowrap;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    margin-left: 5px;
+
+		    }
+		}
+
+
+	}
+
+	.content {
+		max-width: 960px;
+		margin: 0 auto;
+	}
+
+	.container {
+		top: 90px;
+		max-width: 960px;
+		margin: 0 auto;
+		//left-side
+		.mbcontent_L_column {
+			display: block;
+			float: left;
+			background: #FFF;
+			padding: 20px;
+			width: 200px;
+
+			.title_Lbox {
+				font-size: 23px;
+				line-height: 2em;
+				display: block;
+				border-bottom: 1px solid $bg-gray-nomal;
+			}
+
+			li {
+
+				&:hover {
+					color: $orange2; 
+				}
+
+				a {
+					display: block;
+					padding: 10px 0 10px 5px;
+					color: $text-color-light;
+
+					&:hover {
+						text-decoration: none;
+						color: $orange2;
+						background: #fff5ef;
+					}
+				}
+			}
+
+			li.mbmenu_on {
+				background: $bg-gray-nomal;
+
+				a {
+					color: $text-color;
+
+					&:hover {
+						background: inherit;
+					}
+				}
+			}
+		}
+	}
+	
+
+	#tabs {
+		margin: 0 auto;
+		width: 73%;
+		float: right;
+
+		.iner-title {
+			display: block;
+			font-size: 20px;
+			line-height: 2em;
+			font-weight: bold;
+		}
+
+		>nav {
+			max-width: 960px; 
+			margin: 0 auto;
+
+			ul {
+				li {
+					width: auto;
+					padding: 0 20px;
+
+					&:first-child {
+						margin-left: -0.4px;
+					}
+
+					a {
+						font-size: 16px;
+					}
+				}
+			}
+		} 
+
+		.content {
+			margin: -2px auto;
+			padding-bottom: 20px;
+		}
+	}
+}

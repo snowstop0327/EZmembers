@@ -9,12 +9,21 @@
     <link rel="stylesheet" href="stylesheets/slidebars.min.css">
     <link rel="stylesheet" href="stylesheets/members.css">
     <link rel="stylesheet" href="stylesheets/font-awesome.min.css">
-
 </head>
 
 <body>
     <div class="wrapper">
-    <!-- header -->
+        <!-- header -->
+        <header class="pc-header top-header clearfix">
+            <div class="content">
+                <a href="index.html" class="head-logo"></a>
+                <div class="user-info">
+                    <span class="profilepic" style="background-image:url(https://graph.facebook.com/890909974364265/picture?type=small)"></span>
+                    <span class="user-name">Snow-stop  Huang</span>
+                </div>
+            </div>
+        </header>
+        <!-- mobile header -->
         <div class="top-header navbar navbar-inverse navbar-fixed-top sb-slide " role="navigation">
             <!-- Left Control -->
             <div class="sb-toggle-left navbar-left">
@@ -22,76 +31,92 @@
             </div>
             <h1>我的好康</h1>
         </div>
-        <!-- header -->
+        <!-- mobile header -->
         <div id="sb-site">
-        <!-- tab -->
-        <div id="tabs" class="tabs">
-          <nav>
-            <ul>
-              <li><a href="#section-1" class="icon-shop"><span>未領取(6)</span></a></li>
-              <li><a href="#section-2" class="icon-cup"><span>已領取(2)</span></a></li>
-              <li><a href="#section-3" class="icon-food"><span>所有好康(8)</span></a></li>
-            </ul>
-          </nav>
-          <!-- content -->
-          <div class="content">
-            <section id="section-1">
-              <div class="ct-box">
-                <h2>BenQ電視購物金</h2>
-                <span class="result-text">領取成功！</span>
-                <div class="serial-box">
-                <!-- <textarea name="" cols="" rows="" placeholder="eRosd192" class="serial-text" readonly=""></textarea> -->
-                <input id="serial-text" type="text" value="eRosd192" readonly>
-                <!-- <span id="serial-text">eRosd192</span> -->
-                </div>
-                <button id="success-btn" class="hidden-btn"><i class="fa fa-check"></i>複製成功</button>
-                <button id="copy-btn" data-clipboard-action="copy" data-clipboard-target="#serial-text"><i class="fa fa-files-o"></i>複製序號</button>
-                
-                <p>恭喜您成功兌換購物金，於各平台購買BenQ護眼檯燈<br/>
-                    輸入此序號可現折<strong>500</strong>元購物金喔！<br/>
-                    （一組序號限使用一次）</p>
-                <a href="iframe.html" class="goto-btn">前往OOO登錄序號</a>
-              </div>
-            </section>
-            <section id="section-2">
-              
-            </section>
-            <section id="section-3">
-              
-            </section>
-          </div>
-        </div>
-        </div>
-    
-    <!-- Slidebars -->
-    <div class="sb-slidebar sb-left sb-style-push sb-width-custom" data-sb-width="80%">
-        <nav>
-            <ul class="sb-menu">
-                <li>
-                    <div class="notlogin-area" style="display:none;">
-                        <a href="http://testlink.com/regist" class="btn btn-default btn-register">註冊</a>
-                        <a href="http://testlink.com/login" class="btn btn-login">登入</a>
+            <div class="container">
+                <!-- left-side -->
+                <div class="mbcontent_L_column">
+                    <div class="mbcont_Lbox">
+                        <span class="title_Lbox">會員專區</span>
+                        <div class="mbct_side_menu">
+                            <ul>
+                                <li class="mbmenu_off"><a href="shoplist.php">我的收藏</a></li>
+                                <li class="mbmenu_off"><a href="cplist.php">瀏覽紀錄</a></li>
+                                <li class="mbmenu_on"><a href="discount.php">我的好康</a></li>
+                                <li class="mbmenu_off"><a href="member.php">會員資料</a></li>
+                                <li class="mbmenu_off"><a href="chpass.php">密碼修改</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <a href="user_profile.html" class="login-area clearfix"><!-- ok -->
-                        <span class="user-img">
+                </div>
+                <!-- tab -->
+                <div id="tabs" class="tabs">
+                    <h1 class="iner-title">我的好康</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="#section-1" class="icon-shop"><span>未領取(6)</span></a></li>
+                            <li><a href="#section-2" class="icon-cup"><span>已領取(2)</span></a></li>
+                            <li><a href="#section-3" class="icon-food"><span>所有好康(8)</span></a></li>
+                        </ul>
+                    </nav>
+                    <!-- content -->
+                    <div class="content">
+                        <section id="section-1">
+                            <div class="ct-box">
+                                <h2>BenQ電視購物金</h2>
+                                <span class="result-text">領取成功！</span>
+                                <div class="serial-box">
+                                    <!-- <textarea name="" cols="" rows="" placeholder="eRosd192" class="serial-text" readonly=""></textarea> -->
+                                    <input id="serial-text" type="text" value="eRosd192" readonly>
+                                    <!-- <span id="serial-text">eRosd192</span> -->
+                                </div>
+                                <button id="success-btn"><i class="fa fa-check"></i>複製成功</button>
+                                <button id="copy-btn" data-clipboard-action="copy" data-clipboard-target="#serial-text"><i class="fa fa-files-o"></i>複製序號</button>
+                                <p>恭喜您成功兌換購物金，於各平台購買BenQ護眼檯燈
+                                    <br/> 輸入此序號可現折
+                                    <strong>500</strong>元購物金喔！
+                                    <br/> （一組序號限使用一次）
+                                </p>
+                                <a href="iframe.html" class="goto-btn">前往OOO登錄序號</a>
+                            </div>
+                        </section>
+                        <section id="section-2">
+                        </section>
+                        <section id="section-3">
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <!-- Slidebars -->
+            <div class="sb-slidebar sb-left sb-style-push sb-width-custom" data-sb-width="80%">
+                <nav>
+                    <ul class="sb-menu">
+                        <li>
+                            <div class="notlogin-area" style="display:none;">
+                                <a href="http://testlink.com/regist" class="btn btn-default btn-register">註冊</a>
+                                <a href="http://testlink.com/login" class="btn btn-login">登入</a>
+                            </div>
+                            <a href="user_profile.html" class="login-area clearfix">
+                                <!-- ok -->
+                                <span class="user-img">
                 <img src="http://i.imgur.com/NbWreex.jpg" alt="user-img">
               </span>
-                        <span class="user-name">Jennifer Chen</span>
-                    </a>
-                </li>
-                <li class="sb-close"><a href="http://testlink.com/sliderBar01" class="list">首頁</a></li>
-                <li class="sb-close"><a href="http://testlink.com/sliderBar01" class="list">商品分類</a></li>
-                <li class="sb-close"><a href="http://testlink.com/sliderBar01" class="list">平台好康</a></li>
-                <li class="sb-close line">&nbsp;</li>
-                <li class="sb-close"><a href="http://testlink.com/sliderBar01" class="list">我的收藏</a></li>
-                <li class="sb-close"><a href="http://testlink.com/sliderBar01" class="list">帳號維護</a></li>
-                <li class="sb-close line">&nbsp;</li>
-                <li class="logout"><a href="http://testlink.com/logout" class="btn btn-login">登出</a></li>
-            </ul>
-        </nav>
+                                <span class="user-name">Jennifer Chen</span>
+                            </a>
+                        </li>
+                        <li class="sb-close"><a href="http://testlink.com/sliderBar01" class="list">首頁</a></li>
+                        <li class="sb-close"><a href="http://testlink.com/sliderBar01" class="list">商品分類</a></li>
+                        <li class="sb-close"><a href="http://testlink.com/sliderBar01" class="list">平台好康</a></li>
+                        <li class="sb-close line">&nbsp;</li>
+                        <li class="sb-close"><a href="http://testlink.com/sliderBar01" class="list">我的收藏</a></li>
+                        <li class="sb-close"><a href="http://testlink.com/sliderBar01" class="list">帳號維護</a></li>
+                        <li class="sb-close line">&nbsp;</li>
+                        <li class="logout"><a href="http://testlink.com/logout" class="btn btn-login">登出</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </div>
-    </div>
-    
     <!-- Back to top -->
     <!-- <a href="#0" class="cd-top">Top</a> -->
     <!-- Bootstrap core JavaScript
@@ -105,7 +130,7 @@
     <!-- clipboard -->
     <script src="javascripts/clipboard.min.js"></script>
     <script>
-      new CBPFWTabs( document.getElementById( 'tabs' ) );
+    new CBPFWTabs(document.getElementById('tabs'));
     </script>
     <script>
     var clipboard = new Clipboard('#copy-btn');
@@ -119,14 +144,12 @@
     });
     </script>
     <script>
-        $(document).ready(function(){
-            $("#copy-btn").click(function(){
-                $("#succes-btn").addClass('active-btn');
-          });
+    $(document).ready(function() {
+        $("#copy-btn").click(function() {
+            $("#succes-btn").addClass('active-btn');
         });
+    });
     </script>
-    
-  
     <script>
     (function($) {
         $(document).ready(function() {

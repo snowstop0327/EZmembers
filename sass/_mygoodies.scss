@@ -1,8 +1,11 @@
+.iner-title {
+	display: none;
+}
+
 // tabs
 
 #tabs {
 	position: relative;
-	top: 50px;
   width: 100%;
   overflow: hidden;
   margin: 1em 0 2em;
@@ -216,6 +219,7 @@
 		display: none;
 		background: #38A738;
 		border: 1px solid #38A738;
+
 	}
 
 	span.result-text {
@@ -260,6 +264,10 @@
 			font-size: 30px;
 			margin: -6px 0 0 3px;
 		}
+	}
+
+	a {
+		color: inherit;
 	}
 }
 .goo-iframe {

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 1, ../sass/mixins/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -90,6 +91,11 @@ button {
 }
 
 /* line 47, ../sass/mixins/_main.scss */
+.pc-header {
+  display: none;
+}
+
+/* line 51, ../sass/mixins/_main.scss */
 .top-header {
   position: fixed;
   z-index: 999;
@@ -110,7 +116,7 @@ button {
   overflow: auto;
   zoom: 1;
 }
-/* line 58, ../sass/mixins/_main.scss */
+/* line 62, ../sass/mixins/_main.scss */
 .top-header .sb-toggle-left {
   width: 50px;
   height: 50px;
@@ -118,32 +124,57 @@ button {
   background: #ff8e44;
   float: left;
 }
-/* line 65, ../sass/mixins/_main.scss */
+/* line 69, ../sass/mixins/_main.scss */
 .top-header .sb-toggle-left i {
   padding: 14px;
   font-size: 22px;
 }
-/* line 72, ../sass/mixins/_main.scss */
+/* line 76, ../sass/mixins/_main.scss */
 .top-header h1 {
   font-size: 20px;
   line-height: 50px;
   text-align: center;
 }
 
-/* line 3, ../sass/_mygoodies.scss */
-#tabs {
+/* line 83, ../sass/mixins/_main.scss */
+.container {
   position: relative;
   top: 50px;
+}
+/* line 24, ../sass/mixins/_main.scss */
+.container:before, .container:after {
+  content: " ";
+  display: table;
+}
+/* line 29, ../sass/mixins/_main.scss */
+.container:after {
+  clear: both;
+  overflow: auto;
+  zoom: 1;
+}
+/* line 88, ../sass/mixins/_main.scss */
+.container .mbcontent_L_column {
+  display: none;
+}
+
+/* line 1, ../sass/_mygoodies.scss */
+.iner-title {
+  display: none;
+}
+
+/* line 7, ../sass/_mygoodies.scss */
+#tabs {
+  position: relative;
   width: 100%;
   overflow: hidden;
   margin: 1em 0 2em;
   font-weight: 300;
 }
-/* line 11, ../sass/_mygoodies.scss */
+/* line 14, ../sass/_mygoodies.scss */
 #tabs > nav {
   text-align: center;
 }
-/* line 13, ../sass/_mygoodies.scss */
+/* line 16, ../sass/_mygoodies.scss */
 #tabs > nav ul {
   padding: 0;
   margin: 0;
@@ -151,7 +182,7 @@ button {
   list-style: none;
   display: inline-block;
 }
-/* line 20, ../sass/_mygoodies.scss */
+/* line 23, ../sass/_mygoodies.scss */
 #tabs > nav ul li {
   border: 1px solid #d9d9d9;
   background: #d9d9d9;
@@ -166,18 +197,18 @@ button {
   -ms-border-radius: 4px 4px 0 0;
   border-radius: 4px 4px 0 0;
 }
-/* line 34, ../sass/_mygoodies.scss */
+/* line 37, ../sass/_mygoodies.scss */
 #tabs > nav ul li.tab-current {
   border: 1px solid #FFF;
   background: #FFF;
   border-bottom: none;
   z-index: 100;
 }
-/* line 40, ../sass/_mygoodies.scss */
+/* line 43, ../sass/_mygoodies.scss */
 #tabs > nav ul li.tab-current a {
   color: #ff752b;
 }
-/* line 46, ../sass/_mygoodies.scss */
+/* line 49, ../sass/_mygoodies.scss */
 #tabs > nav a {
   color: #898989;
   display: block;
@@ -186,44 +217,44 @@ button {
   padding: 0 1.25em;
   white-space: nowrap;
 }
-/* line 56, ../sass/_mygoodies.scss */
+/* line 59, ../sass/_mygoodies.scss */
 #tabs .content {
   background: #fff;
   margin: -2px 3px 0 3px;
 }
-/* line 61, ../sass/_mygoodies.scss */
+/* line 64, ../sass/_mygoodies.scss */
 #tabs .content section {
   display: none;
   max-width: 960px;
   margin: 0 auto;
 }
-/* line 66, ../sass/_mygoodies.scss */
+/* line 69, ../sass/_mygoodies.scss */
 #tabs .content section li.goo-list {
   padding: 12px 10px 8px;
   border-bottom: 1px solid #d9d9d9;
   position: relative;
 }
-/* line 72, ../sass/_mygoodies.scss */
+/* line 75, ../sass/_mygoodies.scss */
 #tabs .content section li.goo-list:hover {
   background: #fff5ef;
 }
-/* line 76, ../sass/_mygoodies.scss */
+/* line 79, ../sass/_mygoodies.scss */
 #tabs .content section li.goo-list .con-left {
   float: left;
   width: 76%;
 }
-/* line 81, ../sass/_mygoodies.scss */
+/* line 84, ../sass/_mygoodies.scss */
 #tabs .content section li.goo-list h2 {
   font-size: 15px;
   line-height: 1.6em;
   width: 90%;
 }
-/* line 87, ../sass/_mygoodies.scss */
+/* line 90, ../sass/_mygoodies.scss */
 #tabs .content section li.goo-list span {
   font-size: 13px;
   color: #7e8491;
 }
-/* line 92, ../sass/_mygoodies.scss */
+/* line 95, ../sass/_mygoodies.scss */
 #tabs .content section li.goo-list a {
   display: inline-block;
   text-align: center;
@@ -236,21 +267,21 @@ button {
   -ms-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 104, ../sass/_mygoodies.scss */
+/* line 107, ../sass/_mygoodies.scss */
 #tabs .content section li.goo-list a:hover {
   text-decoration: none;
 }
-/* line 109, ../sass/_mygoodies.scss */
+/* line 112, ../sass/_mygoodies.scss */
 #tabs .content section li.goo-list a.receive-btn {
   color: #ff752b;
   border: 1px solid #ff752b;
 }
-/* line 113, ../sass/_mygoodies.scss */
+/* line 116, ../sass/_mygoodies.scss */
 #tabs .content section li.goo-list a.receive-btn:hover {
   background: #ff752b;
   color: #fff;
 }
-/* line 119, ../sass/_mygoodies.scss */
+/* line 122, ../sass/_mygoodies.scss */
 #tabs .content section li.goo-list a.got-btn {
   border: 1px solid #ff752b;
   background: #ff752b;
@@ -258,36 +289,36 @@ button {
   font-size: 18px;
   cursor: inherit;
 }
-/* line 127, ../sass/_mygoodies.scss */
+/* line 130, ../sass/_mygoodies.scss */
 #tabs .content section li.goo-list a.expire-btn {
   background: #d9d9d9;
   color: #898989;
   cursor: inherit;
   border: 1px solid #d9d9d9;
 }
-/* line 137, ../sass/_mygoodies.scss */
+/* line 140, ../sass/_mygoodies.scss */
 #tabs .content section.content-current {
   display: block;
 }
 
-/* line 143, ../sass/_mygoodies.scss */
+/* line 146, ../sass/_mygoodies.scss */
 .ct-box {
   text-align: center;
   line-height: 25px;
   padding-bottom: 30px;
   height: 80vh;
 }
-/* line 149, ../sass/_mygoodies.scss */
+/* line 152, ../sass/_mygoodies.scss */
 .ct-box h2 {
   font-size: 21px;
   line-height: 1.6em;
   padding-top: 20px;
 }
-/* line 155, ../sass/_mygoodies.scss */
+/* line 158, ../sass/_mygoodies.scss */
 .ct-box .serial-box {
   margin: 15px 5px;
 }
-/* line 158, ../sass/_mygoodies.scss */
+/* line 161, ../sass/_mygoodies.scss */
 .ct-box .serial-box textarea.serial-text {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -301,7 +332,7 @@ button {
   height: 40px;
   text-align: center;
 }
-/* line 172, ../sass/_mygoodies.scss */
+/* line 175, ../sass/_mygoodies.scss */
 .ct-box .serial-box span#serial-text {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -312,7 +343,7 @@ button {
   font-size: 30px;
   padding: 5px 15px;
 }
-/* line 183, ../sass/_mygoodies.scss */
+/* line 186, ../sass/_mygoodies.scss */
 .ct-box .serial-box input#serial-text {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -325,7 +356,7 @@ button {
   height: 40px;
   text-align: center;
 }
-/* line 199, ../sass/_mygoodies.scss */
+/* line 202, ../sass/_mygoodies.scss */
 .ct-box button#copy-btn, .ct-box #success-btn {
   margin: 5px 0 15px;
   border: 1px solid #ff752b;
@@ -339,18 +370,18 @@ button {
   -ms-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 209, ../sass/_mygoodies.scss */
+/* line 212, ../sass/_mygoodies.scss */
 .ct-box button#copy-btn i, .ct-box #success-btn i {
   font-size: 20px;
   margin-right: 5px;
 }
-/* line 215, ../sass/_mygoodies.scss */
+/* line 218, ../sass/_mygoodies.scss */
 .ct-box #success-btn {
   display: none;
-  background: green;
-  border: 1px solid green;
+  background: #38A738;
+  border: 1px solid #38A738;
 }
-/* line 221, ../sass/_mygoodies.scss */
+/* line 225, ../sass/_mygoodies.scss */
 .ct-box span.result-text {
   font-size: 18px;
   color: #c1272d;
@@ -358,19 +389,19 @@ button {
   width: 95%;
   margin: 0 auto 20px;
 }
-/* line 229, ../sass/_mygoodies.scss */
+/* line 233, ../sass/_mygoodies.scss */
 .ct-box p {
   border-top: 1px solid #d9d9d9;
   padding-top: 10px;
   font-size: 13px;
   margin: 10px;
 }
-/* line 236, ../sass/_mygoodies.scss */
+/* line 240, ../sass/_mygoodies.scss */
 .ct-box strong {
   color: #c1272d;
   font-weight: bold;
 }
-/* line 241, ../sass/_mygoodies.scss */
+/* line 245, ../sass/_mygoodies.scss */
 .ct-box a.goto-btn {
   margin-top: 10px;
   display: inline-block;
@@ -383,25 +414,185 @@ button {
   border-radius: 4px;
 }
 
-/* line 252, ../sass/_mygoodies.scss */
+/* line 256, ../sass/_mygoodies.scss */
 .goo-iframe-header {
   background: #ccc;
   color: #333333;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
 }
-/* line 257, ../sass/_mygoodies.scss */
+/* line 261, ../sass/_mygoodies.scss */
 .goo-iframe-header .sb-toggle-left {
   background: #999;
 }
-/* line 259, ../sass/_mygoodies.scss */
+/* line 263, ../sass/_mygoodies.scss */
 .goo-iframe-header .sb-toggle-left i {
   font-size: 30px;
   margin: -6px 0 0 3px;
 }
+/* line 269, ../sass/_mygoodies.scss */
+.goo-iframe-header a {
+  color: inherit;
+}
 
-/* line 265, ../sass/_mygoodies.scss */
+/* line 273, ../sass/_mygoodies.scss */
 .goo-iframe {
   width: 100vw;
   height: 100vh;
   margin-top: 50px;
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 4, ../sass/_grid.scss */
+  div.top-header {
+    display: none;
+  }
+
+  /* line 8, ../sass/_grid.scss */
+  .pc-header {
+    display: block;
+    background: #393f4e;
+    height: 64px;
+  }
+  /* line 13, ../sass/_grid.scss */
+  .pc-header .head-logo {
+    display: block;
+    width: 220px;
+    height: 64px;
+    background: #ff6706 url(http://ezprice.com.tw/style/images/EZprice-logo.jpg) center no-repeat;
+    float: left;
+  }
+  /* line 21, ../sass/_grid.scss */
+  .pc-header .user-info {
+    float: right;
+    background: #2d3340;
+    padding: 18px 10px 19px 10px;
+    height: 27px;
+    position: relative;
+  }
+  /* line 28, ../sass/_grid.scss */
+  .pc-header .user-info .profilepic {
+    float: left;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    -moz-background-size: cover;
+    /*for Firefox*/
+    -webkit-background-size: cover;
+    /*for Google Chrome、Safari*/
+    -o-background-size: cover;
+    /*for Opera*/
+    background-size: cover;
+    /*for IE*/
+  }
+  /* line 43, ../sass/_grid.scss */
+  .pc-header .user-info .user-name {
+    float: left;
+    height: 30px;
+    vertical-align: middle;
+    max-width: 140px;
+    font-size: 13px;
+    line-height: 30px;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 5px;
+  }
+
+  /* line 62, ../sass/_grid.scss */
+  .content {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  /* line 67, ../sass/_grid.scss */
+  .container {
+    top: 90px;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  /* line 72, ../sass/_grid.scss */
+  .container .mbcontent_L_column {
+    display: block;
+    float: left;
+    background: #FFF;
+    padding: 20px;
+    width: 200px;
+  }
+  /* line 79, ../sass/_grid.scss */
+  .container .mbcontent_L_column .title_Lbox {
+    font-size: 23px;
+    line-height: 2em;
+    display: block;
+    border-bottom: 1px solid #d9d9d9;
+  }
+  /* line 88, ../sass/_grid.scss */
+  .container .mbcontent_L_column li:hover {
+    color: #ff8e44;
+  }
+  /* line 92, ../sass/_grid.scss */
+  .container .mbcontent_L_column li a {
+    display: block;
+    padding: 10px 0 10px 5px;
+    color: #7e8491;
+  }
+  /* line 97, ../sass/_grid.scss */
+  .container .mbcontent_L_column li a:hover {
+    text-decoration: none;
+    color: #ff8e44;
+    background: #fff5ef;
+  }
+  /* line 105, ../sass/_grid.scss */
+  .container .mbcontent_L_column li.mbmenu_on {
+    background: #d9d9d9;
+  }
+  /* line 108, ../sass/_grid.scss */
+  .container .mbcontent_L_column li.mbmenu_on a {
+    color: #333333;
+  }
+  /* line 111, ../sass/_grid.scss */
+  .container .mbcontent_L_column li.mbmenu_on a:hover {
+    background: inherit;
+  }
+
+  /* line 120, ../sass/_grid.scss */
+  #tabs {
+    margin: 0 auto;
+    width: 73%;
+    float: right;
+  }
+  /* line 125, ../sass/_grid.scss */
+  #tabs .iner-title {
+    display: block;
+    font-size: 20px;
+    line-height: 2em;
+    font-weight: bold;
+  }
+  /* line 132, ../sass/_grid.scss */
+  #tabs > nav {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  /* line 137, ../sass/_grid.scss */
+  #tabs > nav ul li {
+    width: auto;
+    padding: 0 20px;
+  }
+  /* line 141, ../sass/_grid.scss */
+  #tabs > nav ul li:first-child {
+    margin-left: -0.4px;
+  }
+  /* line 145, ../sass/_grid.scss */
+  #tabs > nav ul li a {
+    font-size: 16px;
+  }
+  /* line 152, ../sass/_grid.scss */
+  #tabs .content {
+    margin: -2px auto;
+    padding-bottom: 20px;
+  }
 }
