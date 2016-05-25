@@ -155,7 +155,7 @@
 	.serial-box {
 		margin: 15px 5px;
 
-			textarea.serial-text {
+		textarea.serial-text {
 			-webkit-border-radius: 4px;
 		  -moz-border-radius: 4px;
 		  -ms-border-radius: 4px;
@@ -168,6 +168,18 @@
 		  height: 40px;
 		  text-align: center;
 		}
+		
+		span.serial-text {
+			-webkit-border-radius: 4px;
+		  -moz-border-radius: 4px;
+		  -ms-border-radius: 4px;
+		  border-radius: 4px;
+		  background: $bg-gray-light;
+		  color: $orange;
+		  font-size: 30px;
+		  padding: 5px 15px;
+		}
+
 	}
 	button#copy-btn {
 		margin: 5px 0 15px;
@@ -221,10 +233,6 @@
 	color: $text-color;
 	box-shadow: 1px 2px 3px rgba(0,0,0,0.6);
 
-	a {
-		color: inherit;
-	}
-
 	.sb-toggle-left {
 		background: #999;
 		i {
@@ -237,4 +245,5 @@
 	width: 100vw;
 	height: 100vh;
 	margin-top:50px;
+
 }
