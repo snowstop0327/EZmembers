@@ -356,16 +356,20 @@ button {
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
 }
 /* line 220, ../sass/_mygoodies.scss */
+.goo-iframe-header a {
+  color: inherit;
+}
+/* line 224, ../sass/_mygoodies.scss */
 .goo-iframe-header .sb-toggle-left {
   background: #999;
 }
-/* line 222, ../sass/_mygoodies.scss */
+/* line 226, ../sass/_mygoodies.scss */
 .goo-iframe-header .sb-toggle-left i {
   font-size: 30px;
   margin: -6px 0 0 3px;
 }
 
-/* line 228, ../sass/_mygoodies.scss */
+/* line 232, ../sass/_mygoodies.scss */
 .goo-iframe {
   width: 100vw;
   height: 100vh;
