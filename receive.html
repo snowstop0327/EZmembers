@@ -41,9 +41,11 @@
                 <span class="result-text">領取成功！</span>
                 <div class="serial-box">
                 <!-- <textarea name="" cols="" rows="" placeholder="eRosd192" class="serial-text" readonly=""></textarea> -->
-                <span class="serial-text">eRosd192</span>
+                <input id="serial-text" type="text" value="eRosd192" readonly>
+                <!-- <span id="serial-text">eRosd192</span> -->
                 </div>
-                <button id="copy-btn"><i class="fa fa-files-o"></i>複製序號</button>
+                <button id="success-btn" class="hidden-btn"><i class="fa fa-check"></i>複製成功</button>
+                <button id="copy-btn" data-clipboard-action="copy" data-clipboard-target="#serial-text"><i class="fa fa-files-o"></i>複製序號</button>
                 
                 <p>恭喜您成功兌換購物金，於各平台購買BenQ護眼檯燈<br/>
                     輸入此序號可現折<strong>500</strong>元購物金喔！<br/>
@@ -100,9 +102,30 @@
     <script src="javascripts/slidebars.min.js"></script>
     <!-- tabs -->
     <script src="javascripts/cbpFWTabs.js"></script>
+    <!-- clipboard -->
+    <script src="javascripts/clipboard.min.js"></script>
     <script>
       new CBPFWTabs( document.getElementById( 'tabs' ) );
     </script>
+    <script>
+    var clipboard = new Clipboard('#copy-btn');
+
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#copy-btn").click(function(){
+                $("#succes-btn").addClass('active-btn');
+          });
+        });
+    </script>
+    
   
     <script>
     (function($) {

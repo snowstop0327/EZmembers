@@ -169,7 +169,7 @@
 		  text-align: center;
 		}
 		
-		span.serial-text {
+		span#serial-text {
 			-webkit-border-radius: 4px;
 		  -moz-border-radius: 4px;
 		  -ms-border-radius: 4px;
@@ -180,8 +180,23 @@
 		  padding: 5px 15px;
 		}
 
+		input#serial-text {
+			-webkit-border-radius: 4px;
+		  -moz-border-radius: 4px;
+		  -ms-border-radius: 4px;
+		  border-radius: 4px;
+		  background: $bg-gray-light;
+		  color: $orange;
+		  font-size: 30px;
+		  // padding: 5px 15px;
+		  width: 240px;
+		  height: 40px;
+		  text-align: center;
+		}
+
 	}
-	button#copy-btn {
+
+	button#copy-btn, #success-btn {
 		margin: 5px 0 15px;
 	  border: 1px solid $orange;
 	  background: $orange;
@@ -195,6 +210,12 @@
 	  	font-size: 20px;
 	  	margin-right: 5px;
 	  }
+	}
+	
+	#success-btn {
+		display: none;
+		background: #38A738;
+		border: 1px solid #38A738;
 	}
 
 	span.result-text {

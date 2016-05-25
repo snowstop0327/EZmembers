@@ -302,7 +302,7 @@ button {
   text-align: center;
 }
 /* line 172, ../sass/_mygoodies.scss */
-.ct-box .serial-box span.serial-text {
+.ct-box .serial-box span#serial-text {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -312,8 +312,21 @@ button {
   font-size: 30px;
   padding: 5px 15px;
 }
-/* line 184, ../sass/_mygoodies.scss */
-.ct-box button#copy-btn {
+/* line 183, ../sass/_mygoodies.scss */
+.ct-box .serial-box input#serial-text {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  background: #f2f2f2;
+  color: #ff752b;
+  font-size: 30px;
+  width: 240px;
+  height: 40px;
+  text-align: center;
+}
+/* line 199, ../sass/_mygoodies.scss */
+.ct-box button#copy-btn, .ct-box #success-btn {
   margin: 5px 0 15px;
   border: 1px solid #ff752b;
   background: #ff752b;
@@ -326,12 +339,18 @@ button {
   -ms-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 194, ../sass/_mygoodies.scss */
-.ct-box button#copy-btn i {
+/* line 209, ../sass/_mygoodies.scss */
+.ct-box button#copy-btn i, .ct-box #success-btn i {
   font-size: 20px;
   margin-right: 5px;
 }
-/* line 200, ../sass/_mygoodies.scss */
+/* line 215, ../sass/_mygoodies.scss */
+.ct-box #success-btn {
+  display: none;
+  background: green;
+  border: 1px solid green;
+}
+/* line 221, ../sass/_mygoodies.scss */
 .ct-box span.result-text {
   font-size: 18px;
   color: #c1272d;
@@ -339,19 +358,19 @@ button {
   width: 95%;
   margin: 0 auto 20px;
 }
-/* line 208, ../sass/_mygoodies.scss */
+/* line 229, ../sass/_mygoodies.scss */
 .ct-box p {
   border-top: 1px solid #d9d9d9;
   padding-top: 10px;
   font-size: 13px;
   margin: 10px;
 }
-/* line 215, ../sass/_mygoodies.scss */
+/* line 236, ../sass/_mygoodies.scss */
 .ct-box strong {
   color: #c1272d;
   font-weight: bold;
 }
-/* line 220, ../sass/_mygoodies.scss */
+/* line 241, ../sass/_mygoodies.scss */
 .ct-box a.goto-btn {
   margin-top: 10px;
   display: inline-block;
@@ -364,23 +383,23 @@ button {
   border-radius: 4px;
 }
 
-/* line 231, ../sass/_mygoodies.scss */
+/* line 252, ../sass/_mygoodies.scss */
 .goo-iframe-header {
   background: #ccc;
   color: #333333;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
 }
-/* line 236, ../sass/_mygoodies.scss */
+/* line 257, ../sass/_mygoodies.scss */
 .goo-iframe-header .sb-toggle-left {
   background: #999;
 }
-/* line 238, ../sass/_mygoodies.scss */
+/* line 259, ../sass/_mygoodies.scss */
 .goo-iframe-header .sb-toggle-left i {
   font-size: 30px;
   margin: -6px 0 0 3px;
 }
 
-/* line 244, ../sass/_mygoodies.scss */
+/* line 265, ../sass/_mygoodies.scss */
 .goo-iframe {
   width: 100vw;
   height: 100vh;
