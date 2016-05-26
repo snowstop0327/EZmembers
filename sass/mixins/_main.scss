@@ -89,6 +89,7 @@ button {
 		display: none;
 	}
 }
+
 #back-to-top {
 	position: fixed;
     bottom: 40px;
@@ -112,6 +113,13 @@ button {
 		background: $orange;
 	}
 }
+
 #back-to-top.show {
     opacity: 1;
 }
+
+.sb-slidebar.sb-active {
+	overflow-x: hidden; 
+
+}
+

@@ -157,7 +157,7 @@ button {
   display: none;
 }
 
-/* line 92, ../sass/mixins/_main.scss */
+/* line 93, ../sass/mixins/_main.scss */
 #back-to-top {
   position: fixed;
   bottom: 40px;
@@ -177,14 +177,19 @@ button {
   transition: opacity 0.2s ease-out;
   opacity: 0;
 }
-/* line 111, ../sass/mixins/_main.scss */
+/* line 112, ../sass/mixins/_main.scss */
 #back-to-top:hover {
   background: #ff752b;
 }
 
-/* line 115, ../sass/mixins/_main.scss */
+/* line 117, ../sass/mixins/_main.scss */
 #back-to-top.show {
   opacity: 1;
+}
+
+/* line 121, ../sass/mixins/_main.scss */
+.sb-slidebar.sb-active {
+  overflow-x: hidden;
 }
 
 /* line 1, ../sass/_mygoodies.scss */
