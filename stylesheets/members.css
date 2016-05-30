@@ -139,7 +139,7 @@ button {
 /* line 83, ../sass/mixins/_main.scss */
 .container {
   position: relative;
-  top: 50px;
+  margin-top: 50px;
 }
 /* line 24, ../sass/mixins/_main.scss */
 .container:before, .container:after {
@@ -546,9 +546,9 @@ button {
 
   /* line 67, ../sass/_grid.scss */
   .container {
-    top: 90px;
     max-width: 960px;
     margin: 0 auto;
+    margin-top: 90px;
   }
   /* line 72, ../sass/_grid.scss */
   .container .mbcontent_L_column {

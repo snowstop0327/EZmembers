@@ -82,7 +82,7 @@ button {
 
 .container {
 	position: relative;
-	top: 50px;
+	margin-top: 50px;
 	@include clearfix;
 
 	.mbcontent_L_column {
